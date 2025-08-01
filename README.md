@@ -68,7 +68,9 @@ This project applies **unsupervised learning techniques** to segment wholesale c
 
 - Applied **Principal Component Analysis (PCA)** to reduce features to 2 dimensions.
 - Visualized clusters using **interactive Plotly scatter plots**.
+  
 - 🎯 K-Means with PCA
+  
 | Metric               | Score    | Interpretation          |
 |----------------------|----------|-------------------------|
 | Silhouette Score     | 0.586    | Excellent separation    |
