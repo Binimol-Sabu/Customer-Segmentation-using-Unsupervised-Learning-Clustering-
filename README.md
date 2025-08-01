@@ -68,6 +68,18 @@ This project applies **unsupervised learning techniques** to segment wholesale c
 
 - Applied **Principal Component Analysis (PCA)** to reduce features to 2 dimensions.
 - Visualized clusters using **interactive Plotly scatter plots**.
+- 🎯 K-Means with PCA
+| Metric               | Score    | Interpretation          |
+|----------------------|----------|-------------------------|
+| Silhouette Score     | 0.586    | Excellent separation    |
+| Davies-Bouldin Index | 0.809    | Compact cluster formation|
+| Optimal Clusters     | 2        | Determined via elbow method |
+
+**Key Steps**:
+1. PCA reduced dimensions to 2 components (80% variance retained)
+2. Standardized features before clustering
+3. Visualized clear separation in 2D space
+
 - 
 -  3️⃣ DBSCAN (Density-Based Spatial Clustering)
 
@@ -80,17 +92,11 @@ This project applies **unsupervised learning techniques** to segment wholesale c
 > **Insight**: DBSCAN is not suitable for this dataset due to lack of dense region separation or structure. This highlights the importance of evaluating multiple methods.
 
 
----
 
 ## ✅ Conclusion
-
-- **Hierarchical Clustering with 2 clusters** yielded the best results:
-  - Highest **Silhouette Score**: `0.5583`
-  - Lowest **Davies-Bouldin Index**: `0.9654`
-- KMeans also performed reasonably well at `k=4`, but hierarchical clustering showed more distinct clusters.
-- PCA and correlation analysis enhanced cluster interpretability and visualization.
-
----
+    K-Means with PCA (Best Performer)
+    Silhouette Score: 0.586 (Exceeds 0.5 threshold for meaningful structure)
+    Davies-Bouldin: 0.809 (Closest to 0 = best separation)
 
 ## 🛠️ Tools & Libraries
 
