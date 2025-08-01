@@ -100,5 +100,5 @@ This project applies **unsupervised learning techniques** to segment wholesale c
 - Plotly
 
 
-## 📁 Repository Structure
+
 
